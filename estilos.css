@@ -6,7 +6,7 @@ body{
         font-style: normal;
 }
 
-.cabecalho{
+.cabecalho {
     background-color: #171614;
     color: white;
     display: flex;
@@ -19,15 +19,27 @@ body{
     width: 20%;
 }
 
-.textoqr{
-    color: white;
-    padding: 24px 0;
+.cabecalho-lista-item{
+    display: inline-block;
+    margin: 0 16px;
+    font-size: 20px;
 }
 
-.talentosparagrafo1{
+.fototodos{
+    width: 25%;
+}
+
+.talentos1{
     background-color: #CDBCAB;
-    color: black;
-    width: 20%;
-    border-radius: 20px ;
-    font-size: 100%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+    font-size: 20px;
+}
+
+.talentos-conteudo{
+    width: 35%;
+    border-radius: 20%;
 }
