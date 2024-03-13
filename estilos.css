@@ -24,5 +24,6 @@ body{
     background-color: #CDBCAB;
     color: black;
     width: 20%;
-    border-radius:10px ;
+    border-radius: 10px ;
+    font-size: 50%;
 }
