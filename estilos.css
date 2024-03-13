@@ -24,28 +24,10 @@ body{
     padding: 24px 0;
 }
 
-.secao1{
+.talentosparagrafo1{
     background-color: #CDBCAB;
     color: black;
     width: 20%;
-}
-
-.paragrafo1{
     border-radius: 20px ;
     font-size: 100%;
-}
-
-.secao1{
-    background-color: rgb(250, 219, 189);
-    color:white;
-    display: flex;
-    font-size: 20px;
-}
-
-.baitz-imagem{
-    width: 25%;
-}
-
-.secao1conteudo{
-    width: 35%;
 }
