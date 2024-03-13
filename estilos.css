@@ -23,12 +23,6 @@ body{
     width: 70%
 }
 
-.cabecalho-lista-item{
-    display: inline-block;
-    margin: 0 16px;
-    font-size: 20px;
-}
-
 .fototodos{
     width: 25%;
 }
