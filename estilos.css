@@ -19,6 +19,10 @@ body{
     width: 20%;
 }
 
+.cabecalho-codigoqr{
+    width: 30%
+}
+
 .cabecalho-lista-item{
     display: inline-block;
     margin: 0 16px;
