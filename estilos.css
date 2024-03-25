@@ -30,10 +30,6 @@ body{
     font-size: 20px;
 }
 
-.fototodos{
-    width: 25%;
-}
-
 .talentos1{
     background-color: #CDBCAB;
     color:white;
@@ -44,12 +40,55 @@ body{
     font-size: 20px;
 }
 
+.fototodos{
+    width: 25%;
+}
+
 .talentos-conteudo{
     width: 35%;
 }
 
 .paragrafo1{
     color: black;
-    background-color: #686359;
+    background-color: #C9C9C9;
     border-radius: 10px;
+}
+
+.titulo1{
+    color: black;
+    background-color: #C9C9C9;
+    border-radius: 10px;
+    font-size: 150%;
+}
+
+.talentos2{
+    background-color: #CDBCAB;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 0;
+    font-size: 20px;
+}
+
+.frame{
+    width: 15%;
+}
+
+.naosei{
+    width: 25%;
+}
+
+.talentos3{
+    background-color: #CDBCAB;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 0;
+    font-size: 20px;
+}
+
+.desvalorização{
+    width: 25%;
 }
