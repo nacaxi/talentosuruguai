@@ -71,6 +71,16 @@ body{
     font-size: 20px;
 }
 
+.talentos3{
+    background-color: #CDBCAB;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 0;
+    font-size: 20px;
+}
+
 .frame{
     width: 15%;
 }
@@ -91,4 +101,17 @@ body{
 
 .desvalorização{
     width: 25%;
+}
+
+.colunas{
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: #790028;
+}
+  
+.coluna{
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 20px;
 }
