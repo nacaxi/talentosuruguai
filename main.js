@@ -1,1 +1,1 @@
-alert("esse site maravilhoso fica ainda melhor no zoom de 80% no computador! :)")
+alert("esse site fica ainda melhor se vc dimuniur o zoom, caso alguns parágrafos estejam fora do seu devido lugar! :)")
