@@ -54,6 +54,12 @@ body{
     border-radius: 10px;
 }
 
+.paragrafo1{
+    color: black;
+    background-color: #d4d4cc;
+    border-radius: 10px;
+}
+
 .titulo1{
     color: black;
     background-color: #C9C9C9;
@@ -64,6 +70,15 @@ body{
 .titulo2{
     color: black;
     background-color: #C9C9C9;
+    border-radius: 10px;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo3{
+    color: rgb(255, 255, 255);
+    background-color: #790028;
     border-radius: 10px;
     font-size: 200%;
     display: flex;
