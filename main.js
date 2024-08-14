@@ -1,1 +1,1 @@
-alert("esse site fica ainda melhor no computador! :)")
+alert("sabia que esse site fica ainda melhor no computador?")
