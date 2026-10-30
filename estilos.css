@@ -1,155 +1,348 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+/* ==========================================================
+   Talentos Uruguai
+   ========================================================== */
 
-body{
-        font-family: "Lexend", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+:root {
+    --tinta: #171614;
+    --vinho: #790028;
+    --vinho-escuro: #5a001e;
+    --areia: #cdbcab;
+    --areia-clara: #ece3d9;
+    --papel: #faf7f3;
+    --branco: #ffffff;
+
+    --fonte-titulo: "Bricolage Grotesque", "Lexend", sans-serif;
+    --fonte-texto: "Lexend", system-ui, sans-serif;
+
+    --raio: 16px;
+    --largura: 1100px;
 }
+
+/* ---------- Base ---------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fonte-texto);
+    font-weight: 400;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--tinta);
+    background-color: var(--areia-clara);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2 {
+    margin: 0 0 1rem;
+    font-family: var(--fonte-titulo);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+}
+
+h1 { font-size: clamp(2.75rem, 7vw, 5rem); }
+h2 { font-size: clamp(1.75rem, 4vw, 2.75rem); }
+
+p {
+    margin: 0 0 1rem;
+    max-width: 62ch;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--vinho);
+    outline-offset: 3px;
+}
+
+.container {
+    width: min(100% - 2rem, var(--largura));
+    margin-inline: auto;
+}
+
+/* ---------- Cabeçalho ---------- */
 
 .cabecalho {
-    background-color: #171614;
-    color: white;
+    background-color: var(--tinta);
+    color: var(--branco);
+    padding: 1rem 0;
+}
+
+.cabecalho-conteudo {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding: 0;
-    font-size: 150%;
+    gap: 1.5rem;
 }
 
-.logo{
-    width: 30%;
+.cabecalho-logo {
+    width: clamp(80px, 12vw, 130px);
 }
 
-.cabecalho-codigoqr{
-    width: 100%
+.cabecalho-texto {
+    flex: 1;
+    margin: 0;
+    font-size: 1.0625rem;
+    max-width: none;
 }
 
-.cabecalho-lista-item{
-    display: inline-block;
-    margin: 0 16px;
-    font-size: 20px;
+.cabecalho-qr {
+    width: 96px;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: var(--branco);
 }
 
-.talentos1{
-    background-color: #CDBCAB;
-    color:white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 24px 0;
-    font-size: 20px;
+/* ---------- Apresentação ---------- */
+
+.apresentacao {
+    padding: clamp(3rem, 8vw, 6rem) 0;
 }
 
-.fototodos{
-    width: 25%;
-}
-
-.talentos-conteudo{
-    width: 35%;
-}
-
-.talentos-conteudo1{
-    width: 35%;
-}
-
-.paragrafo1{
-    color: black;
-    background-color: #C9C9C9;
-    border-radius: 10px;
-}
-
-.paragrafo2{
-    color: black;
-    background-color: #d4d4cc;
-    border-radius: 10px;
-}
-
-.titulo1{
-    color: black;
-    background-color: #C9C9C9;
-    border-radius: 10px;
-    font-size: 150%;
-}
-
-.titulo2{
-    color: black;
-    background-color: #C9C9C9;
-    border-radius: 10px;
-    font-size: 200%;
-    display: flex;
-    justify-content: center;
-}
-
-.titulo3{
-    color: rgb(255, 255, 255);
-    background-color: #790028;
-    border-radius: 10px;
-    font-size: 200%;
-    display: flex;
-    justify-content: center;
-}
-
-.talentos2{
-    background-color: #CDBCAB;
-    color:white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 24px 0;
-    font-size: 20px;
-}
-
-.talentos3{
-    background-color: #CDBCAB;
-    color:white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 24px 0;
-    font-size: 20px;
-}
-
-.frame{
-    width: 15%;
-}
-
-.naosei{
-    width: 25%;
-}
-
-.talentos3{
-    background-color: #CDBCAB;
-    color:white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 24px 0;
-    font-size: 20px;
-}
-
-.desvalorização{
-    width: 25%;
-}
-
-.colunas{
-    padding: 80px 0;
+.apresentacao-conteudo {
     display: grid;
-    display: flex;
-    grid-template-columns: 33% 33% 33%;
-    background-color: #790028;
-}
-  
-.coluna{
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
-    border-radius: 20px;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+    gap: clamp(2rem, 5vw, 4rem);
 }
 
-.coluna-entrevista{
-    display: flex;
+.apresentacao h1 {
+    color: var(--vinho);
 }
 
-.iconeimagem{
-    width: 25%;
+.destaque {
+    font-size: 1.375rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.apresentacao-imagens {
+    position: relative;
+}
+
+.apresentacao-foto {
+    width: 100%;
+    border-radius: var(--raio);
+    box-shadow: 0 20px 40px -20px rgb(23 22 20 / 0.5);
+}
+
+.apresentacao-frame {
+    position: absolute;
+    right: -0.75rem;
+    bottom: -1.5rem;
+    width: 28%;
+    border-radius: 12px;
+}
+
+/* ---------- Questões com os talentos ---------- */
+
+.questoes {
+    background-color: var(--vinho);
+    color: var(--branco);
+    padding: clamp(3rem, 7vw, 5rem) 0;
+}
+
+.questoes-conteudo {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: clamp(2rem, 5vw, 4rem);
+}
+
+.questoes-imagem {
+    width: 100%;
+    border-radius: var(--raio);
+}
+
+/* ---------- Entrevistas ---------- */
+
+.entrevistas {
+    padding: clamp(3rem, 7vw, 5rem) 0;
+}
+
+.entrevista {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: start;
+    margin-top: 2rem;
+    padding: clamp(1.25rem, 3vw, 2.5rem);
+    background-color: var(--papel);
+    border-radius: var(--raio);
+}
+
+.entrevista-retrato {
+    margin: 0;
+    position: sticky;
+    top: 1.5rem;
+}
+
+.entrevista-retrato img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: var(--raio);
+}
+
+.entrevista-retrato figcaption {
+    margin-top: 0.75rem;
+    font-weight: 500;
+    font-size: 0.9375rem;
+}
+
+.entrevista-perguntas {
+    margin: 0;
+}
+
+.pergunta {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--areia);
+}
+
+.pergunta:first-child { padding-top: 0; }
+.pergunta:last-child  { padding-bottom: 0; border-bottom: 0; }
+
+.pergunta dt {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--vinho);
+}
+
+.pergunta dd {
+    margin: 0.25rem 0 0;
+    font-size: 1.125rem;
+}
+
+.entrevistas-imagem {
+    width: min(100%, 420px);
+    margin: 2.5rem auto 0;
+    border-radius: var(--raio);
+}
+
+/* ---------- Vídeo ---------- */
+
+.video {
+    background-color: var(--areia);
+    padding: clamp(3rem, 7vw, 5rem) 0;
+    text-align: center;
+}
+
+.video h2 {
+    margin-bottom: 2rem;
+}
+
+.video-link {
+    display: inline-block;
+    border-radius: var(--raio);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.video-link:hover {
+    transform: scale(1.02);
+}
+
+.video-link img {
+    width: min(100%, 560px);
+}
+
+/* ---------- Rodapé ---------- */
+
+.rodape {
+    background-color: var(--tinta);
+    color: var(--areia);
+    padding: 1.5rem 0;
+    font-size: 0.875rem;
+}
+
+.rodape p {
+    margin: 0;
+    max-width: none;
+}
+
+/* ---------- Aviso (criado pelo main.js) ---------- */
+
+.aviso {
+    position: fixed;
+    inset: auto 1rem 1rem 1rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.875rem 1rem;
+    border-radius: 12px;
+    background-color: var(--tinta);
+    color: var(--branco);
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 0.35);
+}
+
+.aviso p {
+    margin: 0;
+    flex: 1;
+}
+
+.aviso button {
+    padding: 0.5rem 0.875rem;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--areia);
+    color: var(--tinta);
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* ---------- Telas menores ---------- */
+
+@media (max-width: 800px) {
+    .cabecalho-conteudo {
+        flex-wrap: wrap;
+    }
+
+    .cabecalho-texto {
+        flex-basis: 100%;
+        order: 3;
+    }
+
+    .cabecalho-logo { margin-right: auto; }
+
+    .apresentacao-conteudo,
+    .questoes-conteudo,
+    .entrevista {
+        grid-template-columns: 1fr;
+    }
+
+    .apresentacao-frame {
+        right: 0.5rem;
+    }
+
+    .entrevista-retrato {
+        position: static;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .entrevista-retrato img {
+        width: 96px;
+    }
+
+    .entrevista-retrato figcaption {
+        margin: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .video-link { transition: none; }
 }
